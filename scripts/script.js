@@ -1,18 +1,6 @@
 const newTitle = document.getElementById('new-title'); // eslint-disable-line max-classes-per-file
 const newAuthor = document.getElementById('new-author');
 
-function loadBooks() {
-  const booksAmount = superLibrary.books.length;
-  const emptyHTML = '';
-
-  document.querySelector('.booklist-container').innerHTML = emptyHTML;
-  for (let i = 0; i < booksAmount; i += 1) {
-    loadHTML(i);
-  }
-
-  localStorage.setItem('books', JSON.stringify(superLibrary.books));
-}
-
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -38,6 +26,36 @@ class Library {
     ];
   }
 
+
+  removeBook(index) {
+    this.books.splice(index, 1);
+
+    const booksAmount = this.books.length;
+    const emptyHTML = '';
+
+    document.querySelector('.booklist-container').innerHTML = emptyHTML;
+    for (let i = 0; i < booksAmount; i += 1) {
+      const superHTML = `
+      <li class="book">
+        <div class="book-details">
+        <h4 id="">"${this.books[i].title}"</h4>
+        <p id="">by ${this.books[i].author}</p>
+        </div>
+        <button id="remove-button${i}">Remove</button>
+      </li>
+      `;
+
+      document
+        .querySelector('.booklist-container')
+        .insertAdjacentHTML('beforeend', superHTML);
+      document
+        .getElementById(`remove-button${i}`)
+        .addEventListener('click', () => this.removeBook(i));
+    }
+
+    localStorage.setItem('books', JSON.stringify(this.books));
+  }
+
   addBook(bookTitle, bookAuthor) {
     if (bookTitle !== '' && bookAuthor !== '') {
       const newBook = new Book(bookTitle, bookAuthor);
@@ -45,14 +63,32 @@ class Library {
 
       newTitle.value = '';
       newAuthor.value = '';
-      loadBooks();
+
+      const booksAmount = this.books.length;
+      const emptyHTML = '';
+
+      document.querySelector('.booklist-container').innerHTML = emptyHTML;
+      for (let i = 0; i < booksAmount; i += 1) {
+        const superHTML = `
+        <li class="book">
+          <div class="book-details">
+          <h4 id="">"${this.books[i].title}"</h4>
+          <p id="">by ${this.books[i].author}</p>
+          </div>
+          <button id="remove-button${i}">Remove</button>
+        </li>
+        `;
+
+        document
+          .querySelector('.booklist-container')
+          .insertAdjacentHTML('beforeend', superHTML);
+        document
+          .getElementById(`remove-button${i}`)
+          .addEventListener('click', () => this.removeBook(i));
+      }
+
+      localStorage.setItem('books', JSON.stringify(this.books));
     }
-  }
-
-  removeBook(index) {
-    this.books.splice(index, 1);
-
-    loadBooks();
   }
 }
 
@@ -75,6 +111,18 @@ function loadHTML(index) {
   document
     .getElementById(`remove-button${index}`)
     .addEventListener('click', () => superLibrary.removeBook(index));
+}
+
+function loadBooks() {
+  const booksAmount = superLibrary.books.length;
+  const emptyHTML = '';
+
+  document.querySelector('.booklist-container').innerHTML = emptyHTML;
+  for (let i = 0; i < booksAmount; i += 1) {
+    loadHTML(i);
+  }
+
+  localStorage.setItem('books', JSON.stringify(superLibrary.books));
 }
 
 const localbooks = localStorage.getItem('books');
