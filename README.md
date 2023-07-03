@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -45,8 +43,6 @@ This project is a basic website that allows users to add books to a list. The bo
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 - **Use local Storage**
@@ -55,15 +51,11 @@ This project is a basic website that allows users to add books to a list. The bo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://mrcbq.github.io/awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -82,8 +74,6 @@ Clone this repository to your desired folder:
 https://github.com/mrcbq/awesome-books.git
 
 ### Install
-
-<!-- Install this project with: -->
 
 Clone this repository to your desired folder:
 
@@ -110,8 +100,6 @@ GH Pages, publish the branch in git Hub pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
 
 
@@ -129,8 +117,6 @@ GH Pages, publish the branch in git Hub pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Use Classes**
@@ -138,8 +124,6 @@ GH Pages, publish the branch in git Hub pages
 - [ ] **Add Contact**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -149,16 +133,12 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project...
 Please give us a star to the repo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
