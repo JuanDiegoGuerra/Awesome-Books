@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="book-open-reader-solid.svg" type="image/x-icon">
+    <title>AwesomeBooks</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>Awesome Books</span>
+        <div>
+          <a tabindex="1" id="list-link">List</a>
+          <a tabindex="2" id="add-link">Add new</a>
+          <a tabindex="3" id="contact-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <p class="date">May 4 11:25:17</p>
+    <main>
+      <section id="books" class="content-section">
+        <h1>All awesome books</h1>
+        <ul class="booklist-container"></ul>
+      </section>
+
+      <section id="section2" class="content-section hidden">
+        <h2>Add new book</h2>
+
+        <div class="user-input">
+          <input type="text" name="title" id="new-title" placeholder="Title" />
+        </div>
+
+        <div class="user-input">
+          <input
+            type="text"
+            name="author"
+            id="new-author"
+            placeholder="Author"
+          />
+        </div>
+
+        <button class="btn" id="add-button">Add</button>
+      </section>
+
+      <section id="section3" class="contact-section hidden">
+        <h1>Contact information</h1>
+        <p>
+          Do you have any questions or you just want to say "Hello"? You can
+          reach out to us!
+        </p>
+        <br /><br />
+        <p>. Our email:mail@mail.com</p>
+        <p>. Our phone number: 5555555</p>
+        <p>. Our address: Streetname 22, 84503 City, Country</p>
+      </section>
+    </main>
+    <footer>Copyright - All rights reserved</footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
