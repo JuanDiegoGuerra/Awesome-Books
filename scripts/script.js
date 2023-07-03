@@ -1,6 +1,18 @@
 const newTitle = document.getElementById('new-title'); // eslint-disable-line max-classes-per-file
 const newAuthor = document.getElementById('new-author');
 
+function loadBooks() {
+  const booksAmount = superLibrary.books.length;
+  const emptyHTML = '';
+
+  document.querySelector('.booklist-container').innerHTML = emptyHTML;
+  for (let i = 0; i < booksAmount; i += 1) {
+    loadHTML(i);
+  }
+
+  localStorage.setItem('books', JSON.stringify(superLibrary.books));
+}
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -63,18 +75,6 @@ function loadHTML(index) {
   document
     .getElementById(`remove-button${index}`)
     .addEventListener('click', () => superLibrary.removeBook(index));
-}
-
-function loadBooks() {
-  const booksAmount = superLibrary.books.length;
-  const emptyHTML = '';
-
-  document.querySelector('.booklist-container').innerHTML = emptyHTML;
-  for (let i = 0; i < booksAmount; i += 1) {
-    loadHTML(i);
-  }
-
-  localStorage.setItem('books', JSON.stringify(superLibrary.books));
 }
 
 const localbooks = localStorage.getItem('books');
