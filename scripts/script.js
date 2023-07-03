@@ -33,14 +33,14 @@ class Library {
 
       newTitle.value = '';
       newAuthor.value = '';
-      loadBooks(); // eslint-disable-line no-use-before-define
+      loadBooks();
     }
   }
 
   removeBook(index) {
     this.books.splice(index, 1);
 
-    loadBooks(); // eslint-disable-line no-use-before-define
+    loadBooks();
   }
 }
 
