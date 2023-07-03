@@ -26,7 +26,6 @@ class Library {
     ];
   }
 
-
   removeBook(index) {
     this.books.splice(index, 1);
 
