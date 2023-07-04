@@ -83,14 +83,6 @@ form button {
   width: 3rem;
 }
 
-.date {
-  text-align: right;
-  padding-right: 16px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-right: 25%;
-}
-
 main .addbook-section {
   width: 400px;
   margin-top: 1rem;
@@ -170,4 +162,12 @@ body {
 
 .content-section {
   border-radius: 10px;
+}
+
+.date {
+  text-align: right;
+  padding-right: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 25%;
 }
