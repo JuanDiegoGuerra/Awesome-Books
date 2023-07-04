@@ -9,13 +9,23 @@
 header {
   padding: 2rem;
   margin: 2rem;
-  border: 2px solid black;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  border: 2px solid gray;
+  padding: 0 20px;
+  align-items: center;
+  font-size: large;
+  box-shadow: 4px 0 1px 0 black;
+  border-radius: 10px;
+  height: 6vh;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
 }
 
 nav div {
@@ -24,7 +34,8 @@ nav div {
 }
 
 a {
-  color: black;
+  color: black;  
+  cursor: pointer;
 }
 
 a:active {
@@ -116,10 +127,46 @@ li:nth-child(odd) {
   display: none;
 }
 
-footer {
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  border: 2px solid black;
+.footer {
+  width: 30vw;
+  position: absolute;
+  border: 2px solid gray;
+  padding: 0 20px;
+  bottom: 2em;
+  box-sizing: border-box;
+  box-shadow: 4px 0 1px 0 black;
+  border-radius: 10px;
+  margin-left: 35%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+button {
+  height: 2rem;
+  align-self: center;
+  border: 2px solid;
+  box-shadow: 2px 0 1px 0 black;
+  border-radius: 5px;
+}
+
+form button {
+  align-self: flex-end;
+  width: 3rem;
+}
+
+body {
+  height: 100%;
+  text-align: center;
+}
+
+main {
+  max-width: 30vw;
+  margin: 0 auto;
+}
+
+.content-section {
+  border-radius: 10px;
 }
