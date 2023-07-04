@@ -1,0 +1,7 @@
+button {
+  transition: transform 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
