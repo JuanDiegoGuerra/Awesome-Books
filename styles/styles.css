@@ -11,6 +11,11 @@ header {
   margin: 2rem;
 }
 
+a {
+  color: black;
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,13 +38,13 @@ nav div {
   gap: 1rem;
 }
 
-a {
-  color: black;  
-  cursor: pointer;
-}
-
 a:active {
   color: blue;
+}
+
+.footer a {
+  text-decoration: none;
+  color: blueviolet;
 }
 
 nav div a:nth-child(2) {
@@ -58,6 +63,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button {
+  height: 2rem;
+  align-self: center;
+  border: 2px solid;
+  box-shadow: 2px 0 1px 0 black;
+  border-radius: 5px;
+}
+
+form button {
+  align-self: flex-end;
+  width: 3rem;
 }
 
 .date {
@@ -139,32 +157,9 @@ li:nth-child(odd) {
   margin-left: 35%;
 }
 
-.footer a {
-  text-decoration: none;
-  color: blueviolet;
-}
-
-button {
-  height: 2rem;
-  align-self: center;
-  border: 2px solid;
-  box-shadow: 2px 0 1px 0 black;
-  border-radius: 5px;
-}
-
-form button {
-  align-self: flex-end;
-  width: 3rem;
-}
-
 body {
   height: 100%;
   text-align: center;
-}
-
-main {
-  max-width: 30vw;
-  margin: 0 auto;
 }
 
 .content-section {
