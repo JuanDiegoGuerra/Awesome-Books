@@ -8,7 +8,6 @@
 
 header {
   padding: 2rem;
-  margin: 2rem;
 }
 
 a {
@@ -26,6 +25,8 @@ nav {
   box-shadow: 4px 0 1px 0 black;
   border-radius: 10px;
   height: 6vh;
+  width: 55%;
+  margin-left: 25%;
 }
 
 li a {
@@ -73,6 +74,10 @@ button {
   border-radius: 5px;
 }
 
+#add-button {
+  width: 4vw;
+}
+
 form button {
   align-self: flex-end;
   width: 3rem;
@@ -82,7 +87,8 @@ form button {
   text-align: right;
   padding-right: 16px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: bold;  
+  margin-right: 25%;
 }
 
 main .addbook-section {
